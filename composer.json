@@ -1,0 +1,35 @@
+{
+    "name": "hectorqin/think-captcha",
+    "description": "Captcha package for ThinkPHP5 and ThinkPHP6",
+    "type": "think-extend",
+    "keywords": ["captcha","thinkphp","think", "sdk"],
+    "authors": [
+        {
+            "name": "yunwuxin",
+            "email": "448901948@qq.com"
+        },
+        {
+            "name": "hectorqin",
+            "email": "hectorqin@163.com"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+    	"topthink/framework": ">= 5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hectorqin\\ThinkCaptcha\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Hectorqin\\ThinkCaptcha\\CaptchaService"
+            ]
+        }
+    }
+}
